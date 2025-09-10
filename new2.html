@@ -1,0 +1,38 @@
+<html>
+<head>
+ <title>"regform"</title>
+ </head>
+ <body>
+ <h1>reg</h1>
+ <form onsubmit="return validate()" method="post">
+ Name:<input type="text" id="name" placeholder="enter your name"><br>
+ Email:<input type="text" id="email" placeholder="enter your email"><br>
+ Phon:<input type="text" id="phno" placeholder="enter phno"><br>
+ <input type=submit id="Submit" value="Submit" >
+ </form>
+ <script>
+ function validate()
+ {
+ if (!document.getElementById("name").value==""){
+ alert("enter name!");
+ return false;
+ }
+ if (!document.getElementById("email").value==""){
+ alert("enter name!");
+ return false;
+ }
+ if (!document.getElementById("phno").value==""){
+ alert("enter phno!");
+ return false;
+ }
+ alert("succeful");
+ return true;
+ }
+ </script>
+ </body>
+</html>
+ 
+ 
+ 
+ 
+ 
